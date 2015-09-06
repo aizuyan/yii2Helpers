@@ -22,7 +22,7 @@ $ret = $curl->post($url, $data);
 $ret = $curl->get($url, $data);
 ```
 
-#### [请求路径作为文件名记录日志]()
+#### [请求路径作为文件名记录日志](https://github.com/aizuyan/yii2Helpers/blob/master/FileTarget.php)
 使用很简单，只需要修改配置文件：
 ```php
 'log' => [
