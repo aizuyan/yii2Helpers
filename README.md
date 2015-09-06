@@ -21,3 +21,18 @@ $curl = new CurlHelpers($config);
 $ret = $curl->post($url, $data);
 $ret = $curl->get($url, $data);
 ```
+
+#### [请求路径作为文件名记录日志]()
+使用很简单，只需要修改配置文件：
+```php
+'log' => [
+    'traceLevel' => 3,
+    'targets' => [
+        [
+            'class' => 'component\log\FileTarget',
+            'levels' => ['trace', 'info', 'error', 'warning'],
+        ],
+    ],
+],
+```
+
